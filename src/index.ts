@@ -16,7 +16,7 @@ export type User = {
   name: string;
 };
 
-/*/ 
+
   declare global {
     namespace Express {
       interface Request {
@@ -24,7 +24,7 @@ export type User = {
       }
     }
   } 
-/*/
+
 
 const attachUser = (req: Request, res: Response, next: NextFunction) => {
   req.user = {
